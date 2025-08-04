@@ -6,4 +6,9 @@ export interface IAccount {
   password: string | null
 };
 
-export interface IAccountWithoutId extends Omit<IAccount, 'id'> {}
+export interface IAccountWithoutId extends Omit<IAccount, 'id'> {
+  mark: { text: string }[],
+  recordType: string,
+  login: string,
+  password: string | null
+}
